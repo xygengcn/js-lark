@@ -1,0 +1,39 @@
+{
+  "name": "js-lark",
+  "version": "0.0.1",
+  "description": "js通用函数集合，包含时间函数等",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xygengcn/js-lark.git"
+  },
+  "homepage": "https://github.com/xygengcn/js-lark#readme",
+  "keywords": [
+    "webpack",
+    "@babel",
+    "typescript"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --fix src/**/*.ts",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "xygengcn",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^7.1.0",
+    "prettier": "^2.0.5",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.9.3",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  }
+}
