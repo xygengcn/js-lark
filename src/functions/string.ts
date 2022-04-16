@@ -4,7 +4,10 @@
  */
 export function uuid(): string {
   const blob = URL.createObjectURL(new Blob());
-  const uri = new URL(blob.toString());
+  const blobArr = blob.toString().split("/");
   URL.revokeObjectURL(blob);
-  return uri.hash;
+  return (
+    (blobArr?.length && blobArr[blobArr.length - 1]) ||
+    window.btoa(new Date().getTime().toString())
+  );
 }
